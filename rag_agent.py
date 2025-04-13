@@ -7,6 +7,7 @@ from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
+import os
 
 # Define the state
 class AgentState(TypedDict):
@@ -32,10 +33,14 @@ def initialize_components():
     )
     splits = text_splitter.split_documents(documents)
     
-    # Create vector store
+    # Create persistent directory for Chroma
+    persist_directory = "chroma_db"
+    
+    # Create vector store with persistence
     vectorstore = Chroma.from_documents(
         documents=splits,
-        embedding=embeddings
+        embedding=embeddings,
+        persist_directory=persist_directory
     )
     
     # Create retriever

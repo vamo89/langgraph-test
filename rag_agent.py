@@ -109,7 +109,7 @@ def main():
     # Initialize the state
     initial_state = {
         "messages": [],
-        "current_message": "What is machine learning?"
+        "current_message": "What is the most popular programming language in 2024?"
     }
     
     # Run the graph

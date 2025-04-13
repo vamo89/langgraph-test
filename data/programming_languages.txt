@@ -1,0 +1,13 @@
+Top Programming Languages in 2024:
+
+1. Python - The most popular programming language, known for its simplicity and versatility.
+2. JavaScript - The language of the web, essential for front-end development.
+3. Java - A robust, object-oriented language used in enterprise applications.
+4. C++ - A powerful language for system programming and game development.
+5. C# - Microsoft's language for Windows applications and game development with Unity.
+
+Python's popularity stems from its:
+- Easy-to-read syntax
+- Extensive standard library
+- Strong community support
+- Versatility in web development, data science, AI, and more
